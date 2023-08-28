@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import classNames from 'classnames'
-
 import { HiOutlineLogout } from 'react-icons/hi'
-
-
 import { DASHBOARD_SIDEBAR_LINKS, DASHBOARD_SIDEBAR_BOTTOM_LINKS } from '../../lib/constants/navigation'
 
 const linkClass =
@@ -13,7 +10,7 @@ const linkClass =
 function Sidebar() {
   return (
     <>
-    <div className='flex flex-col p-4 h-screen w-60 bg-black/90 text-blue-600'>
+    <div className='flex flex-col p-4 h-screen w-60 bg-black/90'>
             <div className='flex text-lg font-bold py-3 text-white '>Chosen Soles</div>
             <div className="py-8 flex flex-1 flex-col gap-0.5">
 				{DASHBOARD_SIDEBAR_LINKS.map((link) => (
