@@ -56,7 +56,7 @@ function Login() {
                 </button>
               </div>
               <div className="text-sm">
-                    <a href="#" className="font-semibold text-blue-600 hover:text-blue-500">
+                    <a href="#forgot" className="font-semibold text-blue-600 hover:text-blue-500">
                       Forgot password?
                     </a>
                   </div>
