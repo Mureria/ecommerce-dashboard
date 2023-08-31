@@ -3,9 +3,9 @@ import { IoBagHandle, IoPieChart, IoPeople, IoCart } from 'react-icons/io5'
 
 export default function DashboardStatsGrid() {
 	return (
-		<div className="flex gap-4">
-			<BoxWrapper>
-				<div className="rounded-full h-12 w-12 flex items-center justify-center bg-sky-500">
+		<div className="flex gap-4 mt-4">
+			<BoxWrapper >
+				<div className="rounded-full h-12 w-12 flex items-center justify-center bg-sky-500 hover:bg-sky-600">
 					<IoBagHandle className="text-2xl text-white" />
 				</div>
 				<div className="pl-4">
@@ -57,5 +57,5 @@ export default function DashboardStatsGrid() {
 }
 
 function BoxWrapper({ children }) {
-	return <div className="bg-white rounded-sm p-4 flex-1 border border-gray-200 flex items-center">{children}</div>
+	return <div className="bg-white hover:bg-gray-100 rounded-sm p-4 flex-1  flex items-center">{children}</div>
 }
