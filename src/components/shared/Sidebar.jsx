@@ -10,7 +10,7 @@ const linkClass =
 function Sidebar() {
   return (
     <>
-    <div className='flex flex-col p-4 h-screen w-60 bg-black/90'>
+    <div className='flex flex-col p-4 fixed h-screen w-60 bg-black/90'>
             <div className='flex text-lg font-bold py-3 text-white '>Chosen Soles</div>
             <div className="py-8 flex flex-1 flex-col gap-0.5">
 				{DASHBOARD_SIDEBAR_LINKS.map((link) => (
