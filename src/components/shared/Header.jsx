@@ -8,7 +8,7 @@ export default function Header() {
 	const navigate = useNavigate()
 
 	return (
-		<div className="bg-white h-16 px-4 flex justify-between items-center border-b border-gray-200 ">
+		<div className="bg-white h-16 px-4 flex s justify-between items-center border-b border-gray-200 ">
 			<div className="relative">
 				<HiOutlineSearch fontSize={20} className="text-gray-400 absolute top-1/2 left-3 -translate-y-1/2" />
 				<input
@@ -84,7 +84,7 @@ export default function Header() {
 							<span className="sr-only">Open user menu</span>
 							<div
 								className="h-10 w-10 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center"
-								style={{ backgroundImage: 'url("https://source.unsplash.com/80x80?face")' }}
+								style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80")' }}
 							>
 								<span className="sr-only">Marc Backes</span>
 							</div>
