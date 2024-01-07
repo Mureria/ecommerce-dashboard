@@ -1,65 +1,73 @@
 import React from 'react'
-import { IoBagHandle, IoPieChart, IoPeople, IoCart } from 'react-icons/io5'
 
 function Product() {
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-4 mt-4">
-			<BoxWrapper >
-				<div className="rounded-full h-12 w-12 flex items-center justify-center bg-sky-500 hover:bg-sky-600">
-					<IoBagHandle className="text-2xl text-white" />
-				</div>
-				<div className="pl-4">
-					<span className="text-sm text-gray-500 font-light">Total Sales</span>
-					<div className="flex items-center">
-						<strong className="text-xl text-gray-700 font-semibold">$54232</strong>
-						<span className="text-sm text-green-500 pl-2">+343</span>
-					</div>
-				</div>
-			</BoxWrapper>
-			<BoxWrapper>
-				<div className="rounded-full h-12 w-12 flex items-center justify-center bg-orange-600">
-					<IoPieChart className="text-2xl text-white" />
-				</div>
-				<div className="pl-4">
-					<span className="text-sm text-gray-500 font-light">Total Expenses</span>
-					<div className="flex items-center">
-						<strong className="text-xl text-gray-700 font-semibold">$3423</strong>
-						<span className="text-sm text-green-500 pl-2">-343</span>
-					</div>
-				</div>
-			</BoxWrapper>
-			<BoxWrapper>
-				<div className="rounded-full h-12 w-12 flex items-center justify-center bg-yellow-400">
-					<IoPeople className="text-2xl text-white" />
-				</div>
-				<div className="pl-4">
-					<span className="text-sm text-gray-500 font-light">Total Customers</span>
-					<div className="flex items-center">
-						<strong className="text-xl text-gray-700 font-semibold">12313</strong>
-						<span className="text-sm text-red-500 pl-2">-30</span>
-					</div>
-				</div>
-			</BoxWrapper>
-			<BoxWrapper>
-				<div className="rounded-full h-12 w-12 flex items-center justify-center bg-green-600">
-					<IoCart className="text-2xl text-white" />
-				</div>
-				<div className="pl-4">
-					<span className="text-sm text-gray-500 font-light">Total Orders</span>
-					<div className="flex items-center">
-						<strong className="text-xl text-gray-700 font-semibold">16432</strong>
-						<span className="text-sm text-red-500 pl-2">-43</span>
-					</div>
-				</div>
-			</BoxWrapper>
+      <BoxWrapper>
+		<div className='flex justify-between gap-16 items-start'>
+    <div>
+        <h1 className='text-xl font-semibold pb-3 font-sans tracking-tighter'>Add New Product</h1>
+        <div>
+          <form action="" method='Post'>
+            <div className='flex flex-col mb-4'>
+              <label htmlFor="name" className='text-sm font-semibold text-rgb[(107 114 128)] pb-1 font-sans tracking-tighter'>Product Name</label>
+              <input type="text" className='w-full bg-slate-50 py-2' />
+            </div>
+            <div className='flex flex-col mb-4' >
+              <label htmlFor="description" className='text-sm font-semibold text-rgb[(107 114 128)] pb-1 font-sans tracking-tighter'>Description (optional)</label>
+              <input type="text" className='w-full bg-slate-50 py-2'/>
+            </div>
+            <div className='flex flex-col mb-4'>
+              <label htmlFor="category" className='text-sm font-semibold text-rgb[(107 114 128)] pb-1 font-sans tracking-tighter'>Category</label>
+              <p className='text-xs pb-1'>Include a category to assist in quick product identification</p>
+              <input type="text" className='w-full bg-slate-50 py-2'/>
+            </div>
+
+            <div className='flex flex-col'>
+              <label htmlFor="Pricing" className='text-sm font-semibold text-rgb[(107 114 128)] pb-1 font-sans tracking-tighter'>Pricing</label>
+              <div className='flex gap-6'>
+                <div>
+                  <p className='text-xs pb-1'>selling Price</p>
+                  <input type="text" className='w-full bg-slate-50 py-2'/>
+                </div>
+                <div>
+                  <p className='text-xs pb-1'>Discount Price</p>
+                  <input type="text" className='w-full bg-slate-50 py-2'/>
+                </div>
+              </div>
+            </div>              
+
+            <div>
+              <label htmlFor="stock" className='text-sm font-semibold text-rgb[(107 114 128)] pb-1 font-sans tracking-tighter'>Stock</label>
+              <p className='text-xs pb-1'>Stock Availability</p>
+              <input type="text" className='w-full bg-slate-50 py-2'/>
+            </div>
+
+            <button className='text-base my-10  bg-blue-400 text-slate-100 py-2 px-10 rounded-full '>Add Product</button>
+            
+          </form>
+        </div>
+      </div>
+
+      {/* Right */}
+			<div>
+        <div className='bg-red-800 w-[600px] h-[400px] p-10'>
+          <div className='flex flex-col justify-center items-center bg-white'>
+            <p>Drag and Drop.JPEG File</p>
+            <p>or</p>
+            <p>Upload from device</p>
+          </div>
+        </div>
+        
+      </div>
+			
 		</div>
-      
+      </BoxWrapper>      
     </>
   )
 }
 function BoxWrapper({ children }) {
-	return <div className="bg-white hover:bg-gray-100 rounded-sm p-4 flex-1  flex items-center">{children}</div>
+	return <div className="bg-white hover:bg-gray-100 rounded-sm p-4   flex items-center">{children}</div>
 }
 
 export default Product
