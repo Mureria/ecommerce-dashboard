@@ -6,9 +6,9 @@ import Header from "./Header"
 function Layout() {
   return (
     <>
-      <div className="flex bg-black/90 h-full w-screen">
+      <div className="flex gap-2 bg-black/90 h-full w-full ">
         <div><Sidebar/></div>
-        <div className="p-4 md:ml-60 ">
+        <div className="mx-auto md:ml-60 ">
           <div><Header/></div>
           <div>{<Outlet/>}</div>
           <div><Footer/></div>
