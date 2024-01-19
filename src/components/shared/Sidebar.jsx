@@ -21,7 +21,7 @@ function Sidebar() {
 				{DASHBOARD_SIDEBAR_BOTTOM_LINKS.map((link) => (
 					<SidebarLink key={link.key} link={link} />
 				))}
-				<Link to='Login'>
+				<Link to='/'>
 				<div  className={classNames(linkClass, 'cursor-pointer text-red-500')}>
 					<span className="text-xl">
 						<HiOutlineLogout   />
