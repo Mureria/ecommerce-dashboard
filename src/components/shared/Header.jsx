@@ -8,16 +8,16 @@ export default function Header() {
 	const navigate = useNavigate()
 
 	return (
-		<div className="bg-white h-16 px-4 flex s justify-between items-center border-b border-gray-200 ">
+		<div className="bg-white h-16 px-4  flex  justify-between items-center border-b border-gray-200 w-[1100px] ">
 			<div className="relative">
 				<HiOutlineSearch fontSize={20} className="text-gray-400 absolute top-1/2 left-3 -translate-y-1/2" />
 				<input
 					type="text"
 					placeholder="Search..."
-					className="text-sm focus:outline-none active:outline-none border border-gray-300 w-[24rem] h-10 pl-11 pr-4 rounded-sm"
+					className="text-sm focus:outline-none active:outline-none border border-gray-300 w-[12rem] md:w-[24rem] h-10 pl-11 pr-4 rounded-sm"
 				/>
 			</div>
-			<div className="flex items-center gap-2 mr-2">
+			<div className="hidden md:flex items-center gap-2 mr-2">
 				<Popover className="relative">
 					{({ open }) => (
 						<>
@@ -99,7 +99,7 @@ export default function Header() {
 						leaveFrom="transform opacity-100 scale-100"
 						leaveTo="transform opacity-0 scale-95"
 					>
-						<Menu.Items className="origin-top-right z-10 absolute right-0 mt-2 w-48 rounded-sm shadow-md p-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+						<Menu.Items className="origin-top-right  z-10 absolute right-0 mt-2 w-48 rounded-sm shadow-md p-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
 							<Menu.Item>
 								{({ active }) => (
 									<div
